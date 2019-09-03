@@ -1,4 +1,4 @@
-## Cliend for Django React Website
+## Client for Django React Website
 
 Live at :https://condescending-golick-f53cc8.netlify.com/
 
