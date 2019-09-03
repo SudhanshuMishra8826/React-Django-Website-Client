@@ -16,7 +16,7 @@ class App extends Component {
 
   componentDidMount() {
     if (this.state.logged_in) {
-      fetch('http://sudh22.pythonanywhere.com/account/current_user/', {
+      fetch('https://sudh22.pythonanywhere.com/account/current_user/', {
         headers: {
           Authorization: `JWT ${localStorage.getItem('token')}`
         }
@@ -30,7 +30,7 @@ class App extends Component {
 
   handle_login = (e, data) => {
     e.preventDefault();
-    fetch('http://sudh22.pythonanywhere.com/token-auth/', {
+    fetch('https://sudh22.pythonanywhere.com/token-auth/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ class App extends Component {
 
   handle_signup = (e, data) => {
     e.preventDefault();
-    fetch('http://sudh22.pythonanywhere.com/account/users/', {
+    fetch('https://sudh22.pythonanywhere.com/account/users/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
