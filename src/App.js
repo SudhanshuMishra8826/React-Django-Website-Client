@@ -94,13 +94,18 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div className="navbar navbar-expand-lg navbar-light bg-light">
+        <a className="navbar-brand">Zigway.co Internship Task</a>
+
         <Nav
           logged_in={this.state.logged_in}
           display_form={this.display_form}
           handle_logout={this.handle_logout}
         />
+        </div>
         {form}
-        <h3>
+        <br></br>
+        <h3 className="container">
           {this.state.logged_in
             ? `Hello, ${this.state.username}`
             : 'Please Log In'}
